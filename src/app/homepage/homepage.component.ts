@@ -22,6 +22,7 @@ export class HomepageComponent implements OnInit {
   limit = 3;
   total = 0;
 
+  /*** Get Data from Algolia (Database) **/
   getData() {
     let _this = this
     this.loading = true;
@@ -34,11 +35,13 @@ export class HomepageComponent implements OnInit {
     });
   }
 
+  /** Logout function **/
   logout() {
     localStorage.clear();
     this.login = false
   }
 
+  /** Pagination **/
   loadmore() {
     ++this.page;
     this.getData()

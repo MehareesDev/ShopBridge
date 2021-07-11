@@ -4,9 +4,9 @@
     <h4 class="card-title text-white">Product Listt</h4>
     <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
   </div>
-    <button id="add__new__list" type="button" class="btn btn-success mb-3" [routerLink]="['/dashboard/product-update']">New Product</button>
-    <button id="add__new__list" type="button" class="btn btn-danger mb-3 pull-right" (click)="logout()">Logout</button>
-  <div class="card table-responsive">
+    <button  type="button" class="btn btn-success mb-3" [routerLink]="['/dashboard/product-update']">New Product</button>
+    <button  type="button" class="btn btn-danger mb-3 pull-right" (click)="logout()">Logout</button>
+  <div class="card table-responsive mb-4">
     <table class="table table-hover table-bordered table-striped">
       <thead>
       <tr>
@@ -37,6 +37,7 @@
         Load More
         <span class="spinner-border spinner-border-sm" *ngIf="loading" role="status" aria-hidden="true"></span>
       </button>
+      <button  type="button" class="btn btn-info m-2" [routerLink]="['/']">Home Page</button>
     </div>
   </div>
 </div>

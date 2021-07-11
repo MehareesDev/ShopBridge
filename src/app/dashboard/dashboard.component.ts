@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
   getData(){
     this.loading = true;
     let _this = this
-    this.CS.getProduct({}).subscribe(response => {
+    this.CS.getProduct({page: this.page}).subscribe(response => {
       if (response.success) {
         _this.total = response.data.nbHits
         _this.products = response.data && response.data.hits.length ? [..._this.products, ...response.data.hits] : _this.products;
