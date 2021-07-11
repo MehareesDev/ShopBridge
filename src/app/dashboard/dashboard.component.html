@@ -5,8 +5,9 @@
     <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
   </div>
     <button  type="button" class="btn btn-success mb-3" [routerLink]="['/dashboard/product-update']">New Product</button>
-    <button  type="button" class="btn btn-danger mb-3 pull-right" (click)="logout()">Logout</button>
-  <div class="card table-responsive mb-4">
+    <button type="button" class="btn btn-danger mb-3 pull-right ml-5" (click)="logout()">Logout</button>
+    <button type="button" class="btn btn-info pull-right " [routerLink]="['/']">Home Page</button>
+    <div class="card table-responsive mb-4">
     <table class="table table-hover table-bordered table-striped">
       <thead>
       <tr>
@@ -37,7 +38,6 @@
         Load More
         <span class="spinner-border spinner-border-sm" *ngIf="loading" role="status" aria-hidden="true"></span>
       </button>
-      <button  type="button" class="btn btn-info m-2" [routerLink]="['/']">Home Page</button>
     </div>
   </div>
 </div>
